@@ -6,7 +6,7 @@ body,html{
 /*비주얼설정*/
 #visual-wrap{
     width: 100%;
-    height: 100%;
+    height: auto;
     overflow: hidden;
     background: black;
 }
@@ -554,7 +554,7 @@ div.layer{
 }
 
 #solutions-all li:hover{
-    transform: scale(1.3);
+    transform: scale(1.1);
 }
 
     
@@ -590,27 +590,37 @@ div.layer{
         width: 100%;
         
     } 
-
-    #reservation-body{
-        height: 1200px;
+    #main-image-text{
+        font-size: 14px;
     }
+
+    #store{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    #store h1{
+        padding-top: 0px;
+    }
+
+   
     #reservation{
-        justify-content: normal;
+        justify-content: none;
         margin: 0px;
+        height: auto;
     }
     #reservation-title{
-        margin-top: 50px;
+        margin-bottom: 0px;
 
     }
-    #main-image-text{
-        font-size: 10px;
-    }
+    
     #store-body::after{
         display: none;
     }
     
     #pick{
         left: -12%;
+        top: -100px;
     }
     #pick-list{
         display: flex;
@@ -627,10 +637,11 @@ div.layer{
         flex-direction: column;
         width: auto;
         justify-content: normal;
+        height: auto;
         
     }
     .pick-me-btn{
-        margin-top: 420px;
+        margin-top: 350px;
 
     }
 
@@ -641,7 +652,7 @@ div.layer{
         padding-left: 0px;
     }
     #calendar img{
-        transform: scale(0.9);
+        transform: scale(0.8);
     }
     #reservation-body::after{
         height: 1070px;
@@ -690,13 +701,15 @@ div.layer{
     #main-text-wrap{
         display:block;
     }
+    
+    #store-body{
+        height: 800px;
+    }
     #store-list li p{
         font-size: 24px;
         bottom: -15px;
     }
-    #calendar img{
-        transform: scale(0.8);
-    }
+    
     #goods-list{
         transform: scale(0.9);
     }
