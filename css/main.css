@@ -1,0 +1,671 @@
+body,html{
+    width: 100%;
+    height: 100%;
+}
+
+/*비주얼설정*/
+#visual-wrap{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background: black;
+}
+#movie-wrap{
+    width: 100%;
+    position: relative;
+    left: 0px;
+    top: -57px;
+    padding-bottom:56.25%;
+}
+embed#movie{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+}
+#main-text-wrap{
+    text-align: center;
+    display: none;
+}
+#main-text{
+    font: normal 40px/46px 'Caladea';
+    color:#F5C13B;
+    margin-bottom:40px 
+}
+#visual-wrap p{
+    margin-top: 20px;
+}
+/*비주얼설정끝*/
+
+/*컨텐츠설정*/
+#content-wrap{
+    width: 100%;
+    height: auto;
+    overflow:hidden
+    
+}
+#main-content-body{
+    width: 100%;
+    height: 1000px;
+    background: black;
+}
+#main-content{
+    width: 1680px;
+    height: 100%;
+    background: black;
+    margin: 0px auto;
+    display: flex;
+}
+#main-image{
+    width: 40%;
+    display: flex;
+    align-items: center;
+}
+#main-image-text{
+    width: 50%;
+    text-align: right;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: white;
+    position: relative;
+    left: 0px;
+    top: 0px;
+}
+#title-1{
+    font: bold 4.374em 'Caladea';
+    opacity: 0;
+    /* margin-bottom: 20px; */
+    position: absolute;
+    top: 400px; /*200*/
+    right: 5px;
+}
+#title-2{
+    font: bold 4.374em 'Caladea';
+    opacity: 0;
+    position: absolute;
+    top: 520px; /*320*/
+    right: 5px;
+    /* margin-bottom: 100px; */
+}
+#title-in-text{
+    font: normal 1.625em 'Caladea';
+    opacity: 0;
+    position: absolute;
+    top: 800px; /*600*/
+    right: 5px;
+    
+}
+
+
+#store-body{
+    width: 100%;
+    height: 1000px;
+    position: relative;
+    left: 0px;
+    top: 0px;
+}
+
+#store{
+    width: 1680px;
+    height: 100%;
+    margin: 0px auto;
+}
+.content-title{
+    font: normal 2.375em 'Caladea';
+    padding-top: 107px;
+    box-sizing: border-box;
+    text-align: center;
+}
+#store-list{
+    display: flex;
+    justify-content: space-around;
+    padding-top: 40px;
+    box-sizing: border-box;
+}
+#store-body::after{
+    content: "";
+    width: 100%;
+    height: 480px;
+    background-color: #F5C13B;
+    display: block;
+    position: absolute;
+    bottom: 200px;
+    z-index: -1;
+}
+#store-list li{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    left: 0px;
+    top: 0px;
+    
+
+}
+#store-list li p{
+    font: normal 2.125em 'Caladea';
+    position: absolute;
+    bottom:-20px;
+    /* left: 200px; */
+}
+#store-list li img{
+    width: 100%;
+}
+div.layer{
+    background-color: rgba(229, 229, 229, 0.7);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity:0;
+    
+    
+
+}
+#store-list li div.selected{
+    opacity:1
+}
+.layer-text{
+    top: 100px;
+    text-align: inherit;
+    left: 25px;
+}
+.layer-title{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/*pick*/
+
+#reservation-body{
+    width: 100%;
+    height: 1000px;
+    position:relative;
+    left: 0px;
+    top: 0px;
+    background: #FCF5F0;;
+}
+#reservation-title{
+    font: normal 2.375em 'Caladea';
+    /* padding-top: 163px;
+    box-sizing: border-box; */
+    text-align: center;
+    margin-bottom: 50px;
+}
+#calendar-pick-content{
+    width: 100%;
+    height: 495px; /*495/*==*/
+    display: flex;
+    justify-content: center;
+}
+
+#reservation{
+    width: 1680px;
+    height: 100%;
+    margin: 0px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#calendar{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    padding-left: 300px;
+    box-sizing: border-box;
+}
+#pick{
+    width: 50%;
+    position: relative;
+    overflow: hidden;
+}
+#pick-list{
+    position: absolute;
+    left: 0px;
+    top: 0px;
+}
+#pick-list li{
+    width: 573px;
+    height: 345px;
+    padding: 25px;
+    box-sizing: border-box;
+    background: #1b1b1b;
+    position: absolute;
+    top: 77px;
+    margin-left: 130px;
+    opacity: 1;
+    
+}
+
+.pick-title{
+    font: normal 1.5em 'Caladea';
+    color: white;
+    
+}
+#pick-image-list{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 14px;
+}
+
+
+
+#pick-time-list{
+    width: 507px;
+    height: 234px;
+    margin-top: 30px;
+}
+.time-title{
+    font: normal 1.5em 'Caladea';
+    color: white; 
+}
+.time{
+    width: 120px;
+    height: 44px;
+    background: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    float: left;
+    margin-right: 5px;
+    margin-top: 10px;
+}
+#noon-list{
+    margin-top: 60px;
+}
+
+.type-title{
+    margin-top: 10px;
+    font: normal 1.5em 'Caladea';
+    color: white;
+}
+
+#pick-type-text{
+    margin-top: 10px;
+    font: normal 1.5em 'Caladea';
+    color: white;
+}
+#pick-type-list{
+    margin-top: 66px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    text-align: center;
+}
+#pick-type-list div{
+    width: 120px;
+    height: 72px;
+    margin-right: 15px;
+    background: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font: normal 1.5em 'Caladea';
+}
+
+
+.pick-list{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 39px;
+}
+.pick-list div{
+    font: normal 1.5em 'Caladea';
+    width:  max-content;
+    height: 60px;
+    background: white;
+    margin-right: 20px;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    padding: 0px 10px;
+    box-sizing: border-box;
+}
+
+/*pick*/
+
+
+
+
+
+#pick-btn{
+    position: absolute;
+}
+#left-btn{
+    position: absolute;
+    left: 60px;
+    top: 180px;
+}
+#right-btn{
+    position: absolute;
+    left: 690px;
+    top: 180px;
+}
+
+.all-btn{
+    display: flex;
+    align-items: stretch;
+    justify-content: center;
+    margin-top: 55px;
+}
+
+.all-content-btn{
+    width: 380px;
+    height: 66px;
+    background: white;
+    border: solid 3px #1b1b1b;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font: normal 1.5em 'Caladea';
+    box-shadow: 2px 2px rgba(128, 128, 128, 0.5);
+
+}
+
+/*pick 컨텐츠 끝*/
+
+/*상품*/
+
+#goods-body{
+    width: 100%;
+    height: 1000px;
+    background-color:#610000;
+}
+#goods{
+    width: 1680px;
+    height: 100%;
+    margin: 0px auto;
+}
+.goods-big-text{
+    font: normal 3.125em 'Caladea';
+    color: #F5C13B;
+}
+.ontext{
+    padding-top: 30px;
+    box-sizing: border-box;
+    margin-left: 327px;
+}
+.downtext{
+    padding-bottom: 10px;
+    box-sizing: border-box;
+    margin-left: 745px;
+}
+#goods-list{
+    width: 751px;
+    height: 775px;
+    margin: 25px auto;
+    position: relative;
+    left: 0px;
+    top: 0px;
+    
+    
+}
+#goods-list div{
+    position: absolute;
+    text-align: center;
+    font: normal 1.25em 'Caladea';
+}
+.goods-image1{
+    overflow: hidden;
+}
+.goods-image2{
+    left: 213px;
+    overflow: hidden;
+}
+.goods-image3{
+    right: 0px;
+    overflow: hidden;
+
+}
+.goods-image4{
+    right: 0px;
+    top: 317px;
+    overflow: hidden;
+
+}
+.goods-image5{
+    right: 0px;
+    bottom: 0px;
+    overflow: hidden;
+
+}
+.goods-image6{
+    left: 216px;
+    bottom: 0px;
+    overflow: hidden;
+
+}
+.goods-image7{
+    left: 0px;
+    bottom: 0px;
+    overflow: hidden;
+
+}
+.goods-image8{
+    left: 0px;
+    top: 244px;
+    overflow: hidden;
+}
+
+.on-bg{
+    display: block;
+    
+}
+
+
+#goods-center-box{
+    display: block;
+    width: 335px;
+    height: 318px;
+    background: #F9E0D2;
+    position: absolute;
+    top: 228px;
+    left: 214px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#goods-center-box p{
+    font: normal 2.375em 'Caladea';
+}
+
+.goods-icon img{
+    margin: 3px;
+} 
+.goods-text{
+    width: 100%;
+    position: absolute;
+    top: 30%;
+    font: normal 20px/35px 'Caladea';
+}
+
+.goods-icon{
+    width: 100%;
+    position: absolute;
+    top: 70%;
+   
+}
+
+.image-in{
+    top: 0px;
+    opacity: 0;
+    transition: 0.2s ease-out;
+    background-color: rgba(255, 255, 255, 0.8);
+    width: 100%;
+    height: 100%;
+    overflow: hidden; 
+
+}
+
+
+.bg{
+    display: block;
+}
+
+.image-in:hover{
+    opacity: 1;
+    transform: scale(1.1);
+}
+
+
+
+
+/*상품끝*/
+
+
+
+
+/*솔루션*/
+#solutions-body{
+    width: 100%;
+    height: 1000px;
+    background: white;
+}
+#solutions{
+    width: 1680px;
+    height: 100%;
+    margin: 0px auto;
+}
+#solutions-title{
+    font: normal 2.375em 'Caladea';
+    padding-top: 184px;
+    box-sizing: border-box;
+    text-align: center;
+}
+#solutions-all{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 73px;
+}
+#solutions-all li{
+    transition: 0.3s ease-out;
+}
+
+#solutions-all li:hover{
+    transform: scale(1.3);
+}
+
+    
+#solutions-all li p{
+    font: normal 1.5em 'Caladea';
+    text-align: center;
+    margin-top: 14px;
+}
+
+.sol-btn{
+   margin-top: 88px; 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width:1680px){
+    #main-content,#store,#reservation,#goods,#solutions,header{
+        width: 100%;
+        
+    } 
+    #main-image-text{
+        font-size: 10px;
+    }
+    #store-body::after{
+        display: none;
+    }
+    #pick{
+        transform: scale(0.8);
+    }
+    #pick-list{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+
+    }
+    #pick-list li{
+        margin-left:0px;
+    }
+    #calendar{
+        justify-content: center;
+        padding-left: 0px;
+        
+    }
+
+   
+    #calendar img{
+        transform: scale(0.8);
+    }
+    #reservation-body::after{
+        height: 1070px;
+    }
+   
+
+
+    #pick-btn{
+        transform: scale(0.8);
+    }
+    }
+    /* #left-btn{
+        
+    }
+    #right-btn{
+       
+    } */
+    
+
+
+    #solutions-all li embed{
+        width: 350px;
+        height: 196px;
+    }
+    #solutions-all li p{
+        font-size: 16px;
+    }
+    #main-image img{
+        width: 506px;
+        height: 667px;
+    }
+    
+    
+
+
+
+
+
+
+@media screen and (max-width:1200px){
+    #main-text-wrap{
+        display:block;
+    }
+    #store-list li p{
+        font-size: 24px;
+        bottom: -15px;
+    }
+    .downtext{
+        margin-left: 250px;
+    }
+    #calendar img{
+        transform: scale(0.6);
+    }
+    
+
+}

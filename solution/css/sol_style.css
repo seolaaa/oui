@@ -1,0 +1,207 @@
+/*비주얼*/
+
+#solution-visual-wrap{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+#solution-main-visual{
+    width: 100%;
+    height: 100%;
+}
+#solution-main-visual img{
+    width: 100%;
+}
+
+#soultion-main-text{
+    position: absolute;
+    top: 390px;
+    left: 50%;
+    margin-left: -210px;
+    text-align: center;
+    color: white;
+}
+#main-title{
+    font: normal 3.125em 'Caladea';
+}
+#main-text{
+    font: bold 1.25em 'Caladea';
+    margin-top: 30px;
+}
+#main-title::after{
+    content: "";
+    width: 60px;
+    height: 1px;
+    background: white;
+    display: block;
+    position: absolute;
+    left:205px;
+    top: 80px;
+}
+
+/*비주얼끝*/
+
+/*컨텐츠*/
+#solution-content-wrap{
+    width: 100%;
+    height: auto;
+}
+#solution-video-content-body{
+    width: 100%;
+    height: 1459px;
+}
+.content-title{
+    padding-top: 170px;
+    box-sizing: border-box;
+    font: normal 38px/44px 'Caladea';
+    text-align: center;
+    position: relative;
+    left: 0px;
+    top: 0px;
+}
+.content-title::after{
+    content:"";
+    display: block;
+    width: 350px;
+    height: 2px;
+    position: absolute;
+    left: 400px;
+    top: 190px;
+    background: black;
+}
+.content-title::before{
+    content:"";
+    display: block;
+    width: 350px;
+    height: 2px;
+    position: absolute;
+    right: 400px;
+    top: 190px;
+    background: black;
+}
+#video-content{
+    width: 1200px;
+    height: auto;
+    margin: 0px auto;
+}
+.video-wrap{
+    text-align: center;
+    padding-top: 90px;
+    box-sizing: border-box;
+}
+.video-wrap:first-child{
+    padding-top: 50px;
+}
+.video-title{
+    font: normal 1.25em 'Caladea';
+}
+.video-text{
+    font: normal 1em 'Caladea';
+    padding-top: 6px;
+    box-sizing: border-box;
+}
+.video-list{
+    padding-top: 30px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+
+
+#application-body{
+    width: 100%;
+    height: 430px;
+    background:url(../images/솔루션하단.png);
+}
+#application{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-left: 250px;
+}
+#application-title{
+    margin-bottom: 24px;
+    font: normal 1.5em 'Caladea';
+    color: white;
+}
+#application-text{
+    margin-bottom: 68px;
+    font: normal 1.125em 'Caladea';
+    color: white;
+}
+.application-btn{
+    width: 380px;
+    height: 66px;
+    background: white;
+    border: solid 3px #1b1b1b;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font: normal 24px/33px 'Caladea';
+    box-shadow: 2px 2px rgba(128, 128, 128, 0.5);
+}
+
+
+
+#sign-up-body{
+    width: 100%;
+    height: 1000px;
+    
+}
+#sign-up-wrap{
+    width: 1680px;
+    height: 455px;
+    margin: 0px auto;
+    margin-top: 112px;
+    display: flex;
+    align-items: center;
+    font: normal 1.25em 'Caladea'; 
+}
+#sign-up-left{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#sign-up-left input{
+    width: 427px;
+    height: 57px;
+    border: solid 1px #959595;
+    margin-left: 50px;
+}
+#sign-up-left p{
+    margin-top: 13px;
+}
+#sign-up-left .num{
+    margin-left: 2px;
+
+}
+#sign-up-left .email{
+    margin-left: 23px;
+}
+
+#sign-up-right{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#sign-up-right input{
+    width: 427px;
+    height: 250px;
+    margin-left: 30px;
+}
+#sign-up-btn{
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 180px;
+}

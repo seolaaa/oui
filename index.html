@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="kor">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Caladea&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <title>ouiouiatelier</title>
+    <script src="./js/main.js"></script>
+    <script src="./js/content.js"></script>
+    <script src="./js/reservation.js"></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/3.4.0/gsap.min.js'></script>
+</head>
+
+<body>
+    <!--바로가기시작-->
+    <ul id="skipmenu-list">
+        <li><a href="#" class="hidden">메뉴바로가기</a></li>
+        <li><a href="#" class="hidden">상단바로가기</a></li>
+        <li><a href="#" class="hidden">하단바로가기</a></li>
+    </ul>
+    <!--바로가기끝-->
+
+    <!--헤더시작-->
+    <div id="header-wrap">
+        <header>
+            <h1 id="title"><a href="#">Oui Oui Atelier</a></h1>
+            <nav id="topmenu">
+                <h2 class="hidden">상단빠른메뉴</h2>
+                <ul id="topmenu-list">
+                    <li><a href="#"><i class="fa-solid fa-lock"></i></a></li>
+                    <li><a href="#"><i class="fa-solid fa-user"></i></a></li>
+                    <li><a href="#"><i class="fa-solid fa-cart-shopping"></i></a></li>
+                </ul>
+                <div id="search">
+                    <input type="text"><i class="fa-solid fa-magnifying-glass"></i>
+                </div>
+            </nav>
+            <nav id="mainmenu">
+                <h2 class="hidden">상단메인메뉴</h2>
+                <ul id="mainmenu-list">
+                    <li><a href="#">소개</a></li>
+                    <li><a href="#">솔루션</a></li>
+                    <li><a href="#">제품</a></li>
+                    <li><a href="#">커뮤니티</a></li>
+                </ul>
+            </nav>
+        </header>
+    </div>
+    <!--헤더끝-->
+
+    <!--비주얼시작-->
+    <div id="visual-wrap" class="scroll-wrap">
+        <div id="movie-wrap">
+            <embed id="movie" width="1920" height="1080"
+                src="https://www.youtube.com/embed/pCTdV8fa71M?autoplay=1&mute=1&playlist=pCTdV8fa71M&loop=1&controls=0&rel=0"
+                title="다가올 22년! 새로운 헤어 스타일이 궁금하다면? 영상 속 스타일을 확인해보세요-" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen style="position: absolute; z-index: 5;"></embed>
+            <div style="width: 100%; height: 100%; position: absolute; z-index: 10;"></div>
+        </div>
+        <div id="main-text-wrap">
+            <p id="main-text">we never noticed the beauty,<br>
+                because we were too busy trying to create it</p>
+            <p><a href="$"><img src="./images/애플버튼.png"></a></p>
+            <p><a href="$"><img src="./images/구글버튼.png"></a></p>
+        </div>
+    </div>
+    <!--비주얼끝-->
+
+    <!--컨텐츠시작-->
+    <div id="content-wrap">
+        <div id="main-content-body" class="scroll-wrap">
+            <div id="main-content">
+                <div id="main-image">
+                    <img src="./images/서옥.png" alt="위위아뜰리에대표">
+                </div>
+                <div id="main-image-text">
+                    <p id="title-1">내 직업은 기쁨을 주는 일</p>
+                    <p id="title-2">Oui Oui Atelier 대표<br>헤어 디자이너 서옥</p>
+                    <p id="title-in-text">저만 전문가라고 생각하지 않아요.<br>
+                        서로가 서로에 대한 경계심을 갖지 않고<br>
+                        함께 열심히 해서 발전하고글로벌하게 뻗어 나가서<br>
+                        메이크업 아티스트를 꿈꾸는 사람들에게<br>
+                        더 큰 비전을 줄 수 있었으면 좋겠어요<br>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div id="store-body" class="scroll-wrap">
+            <div id="store">
+                <h1 class="content-title">Store introduction</h1>
+                <ul id="store-list">
+                    <li><a href="#"><img src="./images/지점1.png" alt="강남본점"></a>
+                        <p>강남 본점</p>
+                        <div class="layer">
+                            <img src="./images/지점1.png"style="opacity: 0;" alt="강남본점">
+                            <p class="layer-title">강남 본점</p>
+                            <p class="layer-text">서울특별시<br>
+                                강남구 청담동 87-1번지<br>
+                                담빌딩 3층</p>
+                        </div>
+                    </li>
+                    <li><a href="#"><img src="./images/지점2.png" alt="이대점"></a>
+                        <p>이대점</p>
+                        <div class="layer">
+                            <img src="./images/지점1.png"style="opacity: 0;" alt="강남본점">
+                            <p class="layer-title">이대점</p>
+                            <p class="layer-text">서울특별시<br>
+                                이대 청담동 87-1번지<br>
+                                담빌딩 3층</p>
+                        </div>
+                    </li>
+                    <li><a href="#"><img src="./images/지점3.png" alt="성수점"></a>
+                        <p>성수점</p>
+                        <div class="layer">
+                            <img src="./images/지점1.png"style="opacity: 0;" alt="강남본점">
+                            <p class="layer-title">성수점</p>
+                            <p class="layer-text">서울특별시<br>
+                                성수 청담동 87-1번지<br>
+                                담빌딩 3층</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div id="reservation-body" class="scroll-wrap">
+            <div id="reservation">
+                <h1 id="reservation-title">Oui Oui Atelier 예약</h1>
+                <div id="calendar-pick-content">
+                    <div id="calendar">
+                        <img src="./images/달력.png">
+                    </div>
+                    <div id="pick">
+                        <ul id="pick-list">
+                            <li>
+                                <p class="pick-title">디자이너 Pick</p>
+                                <div id="pick-image-list">
+                                    <div><img src="./images/디자이너1.png" alt="디자이너1번선생님"></div>
+                                    <div><img src="./images/디자이너2.png" alt="디자이너2번선생님"></div>
+                                    <div><img src="./images/디자이너3.png" alt="디자이너3번선생님"></div>
+                                </div>
+                            </li>
+                            <li>
+                                <p class="pick-title">시간 Pick</p>
+                                <div id="pick-time-list">
+                                    <div id="am-list">
+                                        <div class="time-title">
+                                            <p>오전</p>
+                                        </div>
+                                        <div class="time">
+                                            <p>10:30</P>
+                                        </div>
+                                        <div class="time">
+                                            <p>11:30</P>
+                                        </div>
+                                        <div class="time">
+                                            <p>12:30</P>
+                                        </div>
+                                    </div>
+                                    <div id="noon-list">
+                                        <div class="time-title">오후</p>
+                                        </div>
+                                        <div class="time">
+                                            <p>13:30</P>
+                                        </div>
+                                        <div class="time">
+                                            <p>14:00</P>
+                                        </div>
+                                        <div class="time">
+                                            <p>14:30</P>
+                                        </div>
+                                        <div class="time">
+                                            <p>15:00</P>
+                                        </div>
+                                        <div class="time">
+                                            <p>15:30</P>
+                                        </div>
+                                        <div class="time">
+                                            <p>16:00</P>
+                                        </div>
+                                        <div class="time">
+                                            <p>16:30</P>
+                                        </div>
+                                        <div class="time">
+                                            <p>17:00</P>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div id="pick-type-wrap">
+                                    <p class="type-title">시술 Pick</p>
+                                    <div id="pick-type-text">
+                                        <p>매장에서 디자이너와 상담 후<br>확정된 시술메뉴와 금액으로 결제됩니다.</p>
+                                    </div>
+                                    <div id="pick-type-list">
+                                        <div class="type">
+                                            <p>컷트</p>
+                                        </div>
+                                        <div class="type">
+                                            <p>펌</p>
+                                        </div>
+                                        <div class="type">
+                                            <p>염색</p>
+                                        </div>
+                                        <div class="type">
+                                            <p>클리닉</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <p class="pick-title">컷트</p>
+                                <div class="pick-list">
+                                    <div class="cut">
+                                        <p>여성컷 22,000원</p>
+                                    </div>
+                                    <div class="cut">
+                                        <p>남성컷 20,000원</p>
+                                    </div>
+                                    <div class="cut">
+                                        <p>학생컷(초,중,고) 18,000원</p>
+                                    </div>
+                                    <div class="cut">
+                                        <p>앞머리컷 3,000원</p>
+                                    </div>
+                                    <div class="cut">
+                                        <p>유아컷(7세이하) 15,000원</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <p class="pick-title">펌</p>
+                                <div class="pick-list">
+                                    <div class="perm">
+                                        <p>매직세팅 180,000</p>
+                                    </div>
+                                    <div class="perm">
+                                        <p>디지털펌 140,000</p>
+                                    </div>
+                                    <div class="perm">
+                                        <p>매직&뿌리매직 120,000</p>
+                                    </div>
+                                    <div class="perm">
+                                        <p>다운펌 20,000</p>
+                                    </div>
+                                    <div class="perm">
+                                        <p>볼륨매직 180,000</p>
+                                    </div>
+                                    <div class="perm">
+                                        <p>일반펌 90,000</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <p class="pick-title">염색</p>
+                                <div class="pick-list">
+                                    <div class="perm">
+                                        <p>여성베이직컬러 80,000</p>
+                                    </div>
+                                    <div class="perm">
+                                        <p>탈색 100,000</p>
+                                    </div>
+                                    <div class="perm">
+                                        <p>남성베이직컬러 60,000</p>
+                                    </div>
+                                    <div class="perm">
+                                        <p>뿌리염색 50,000</p>
+                                    </div>
+                                    <div class="perm">
+                                        <p>하이라이트 150,000</p>
+                                    </div>
+                                    <div class="perm">
+                                        <p>매니큐어 90,000</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <p class="pick-title">클리닉</p>
+                                <div class="pick-list">
+                                    <div class="perm">
+                                        <p>풀케어클리닉 160,000</p>
+                                    </div>
+                                    <div class="perm">
+                                        <p>복구 80,000</p>
+                                    </div>
+                                    <div class="perm">
+                                        <p>베이직클리닉 50,000</p>
+                                    </div>
+                                    <div class="perm">
+                                        <p>두피스케일링 50,000</p>
+                                    </div>
+                                    <div class="perm">
+                                        <p>두피풀케어 100,000</p>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                        <div id="pick-btn">
+                            <div id="left-btn">
+                                <a href="#;"><img src="./images/왼쪽버튼.png"></a>
+                            </div>
+                            <div id="right-btn">
+                                <a href="#;"><img src="./images/오른쪽버튼.png"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="all-btn pick-me-btn">
+                    <div class="all-content-btn">
+                        <p>예약하기</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="goods-body" class="scroll-wrap">
+            <div id="goods">
+                <p class="goods-big-text ontext">Quotes on Beauty</p>
+                <div id="goods-list">
+                    <div class="goods-image1">
+                        <a href="#">
+                            <img src="./images/상품1.png" alt="하드픽서" class="on-bg">
+                        </a>
+                        <div class="image-in">
+                            <a href="#">
+                                <img src="./images/상품1.png" alt="하드픽서" class="bg">
+                                <div class="image-in">
+                                    <p class="goods-text">하드픽서<br>15,000원 
+                                        <p class="goods-icon">
+                                        <img src="./images/구매.png">
+                                        <img src="./images/담기.png">
+                                        <img src="./images/찜.png">
+                                        </p>
+                                    </p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="goods-image2"><a href="#"><img src="./images/상품2.png" alt="레삐 바이올렛 에디션" class="on-bg"></a>
+                        <div class="image-in"><a href="#">
+                            <img src="./images/상품2.png" alt="레삐 바이올렛 에디션" class="bg">
+                                <p class="goods-text">레삐 바이올렛 에디션<br>160,000원
+                                <p class="goods-icon">
+                                    <img src="./images/구매.png">
+                                    <img src="./images/담기.png">
+                                    <img src="./images/찜.png">
+                                </p>
+                            </p>
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div class="goods-image3"><a href="#"><img src="./images/상품3.png" alt="잔머리 카라" class="on-bg"></a>
+                        <div class="image-in"><a href="#">
+                            <img src="./images/상품3.png" alt="잔머리 카라" class="bg">
+                                <p class="goods-text">잔머리 카라<br>13,000원
+                                    <p class="goods-icon">
+                                        <img src="./images/구매.png">
+                                        <img src="./images/담기.png">
+                                        <img src="./images/찜.png">
+                                    </p>
+                                </p>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="goods-image4"><a href="#"><img src="./images/상품4.png" alt="헤어라이너" class="on-bg"></a>
+                        <div class="image-in"><a href="#">
+                            <img src="./images/상품4.png" alt="헤어라이너" class="bg">
+                                <p class="goods-text">헤어라이너<br>15,000원
+                                    <p class="goods-icon">
+                                        <img src="./images/구매.png">
+                                        <img src="./images/담기.png">
+                                        <img src="./images/찜.png">
+                                    </p>
+                                </p>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="goods-image5"><a href="#"><img src="./images/상품5.png" alt="그레이젤" class="on-bg"></a>
+                        <div class="image-in"><a href="#">
+                            <img src="./images/상품5.png" alt="그레이젤" class="bg">
+                                <p class="goods-text">그레이젤<br>18,000원
+                                    <p class="goods-icon">
+                                        <img src="./images/구매.png">
+                                        <img src="./images/담기.png">
+                                        <img src="./images/찜.png">
+                                    </p>
+                                </p>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="goods-image6"><a href="#"><img src="./images/상품6.png" alt="소프트픽서" class="on-bg"></a>
+                        <div class="image-in"><a href="#">
+                            <img src="./images/상품6.png" alt="소프트픽서" class="bg">
+                                <p class="goods-text">소프트픽서<br>15,000원
+                                    <p class="goods-icon">
+                                        <img src="./images/구매.png">
+                                        <img src="./images/담기.png">
+                                        <img src="./images/찜.png">
+                                    </p>
+                                </p>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="goods-image7"><a href="#"><img src="./images/상품7.png" alt="멜팅 트리트먼트" class="on-bg"></a>
+                        <div class="image-in"><a href="#">
+                            <img src="./images/상품7.png" alt="멜팅 트리트먼트" class="bg">
+                                <p class="goods-text">멜팅 트리트먼트<br>19,000원
+                                    <p class="goods-icon">
+                                        <img src="./images/구매.png">
+                                        <img src="./images/담기.png">
+                                        <img src="./images/찜.png">
+                                    </p>
+                                </p>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="goods-image8"><a href="#"><img src="./images/상품8.png"alt="리얼핑크 컬러토닉샴푸" class="on-bg"></a>
+                        <div class="image-in"><a href="#">
+                            <img src="./images/상품8.png"alt="리얼핑크 컬러토닉샴푸" class="bg">
+                                <p class="goods-text">컬러토닉샴푸<br>25,000원
+                                    <p class="goods-icon">
+                                        <img src="./images/구매.png">
+                                        <img src="./images/담기.png">
+                                        <img src="./images/찜.png">
+                                    </p>
+                                </p>
+                            </a>
+                        </div>
+                    </div>
+                    <div id="goods-center-box">
+                        <p>Oui Oui Atelier<br>Best Product</p>
+                    </div>
+                </div>
+                <p class="goods-big-text downtext">Be your own kind of beautiful</p>
+            </div>
+        </div>
+        <div id="solutions-body" class="scroll-wrap">
+            <div id="solutions">
+                <h1 id="solutions-title">Oui Oui Atelier 솔루션</h1>
+                <ul id="solutions-all">
+                    <li><embed width="540" height="303" src="https://www.youtube.com/embed/MuKb5P3v8Mk"
+                            title="단발머리 고데기 똥손들 보러 오세요 with 바라던 바다" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></embed>
+                        <p>기우쌤이 알려주는 단발머리 스타일링!</p></li>
+                    <li><embed width="540" height="303" src="https://www.youtube.com/embed/pNSwdz-3qUw"
+                            title="[내머리사용법] 두껍고 숱 많은 머리 이러면 얼굴 작아보이겠어요" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></embed>
+                            <p>숱많은 헤어타입, 이렇게 관리해 보세요 </p></li>
+                    <li><embed width="540" height="303" src="https://www.youtube.com/embed/QTsGm6dXSds"
+                            title="[남자머리 셀프스타일링] 가르마 살짝만 타주는 드라이" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></embed>
+                            <p>남자 셀프 추천 스타일링</p></li>
+                </ul>
+                <div class="all-btn sol-btn">
+                    <div class="all-content-btn">
+                        <p>더보기</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--컨텐츠끝-->
+
+    <!--하단시작-->
+    <footer>
+        <h2 class="hidden">하단정보영역</h2>
+        <div id="footer-body">
+            <div class="in-title">
+                <p>Oui Oui Atelier</p>
+            </div>
+            <div id="in-text">
+                <p>대표 서옥</p>
+                <p>대표전화 02-511-2252</p>
+                <p>주소 서울특별시 강남구 청담동 87-1번지 담빌딩 3층</p>
+                <p>사업자등록번호 123-45-6789</p>
+            </div>
+            <div class="in-title">
+                <p>Social Media</p>
+            </div>
+            <div id="in-icon">
+                <img src="./images/인스타.png">
+                <img src="./images/페북.png">
+                <img src="./images/유튜브.png">
+            </div>
+        </div>
+    </footer>
+    <!--하단끝-->
+</body>
+
+</html>

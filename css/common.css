@@ -1,0 +1,184 @@
+/*기본설정*/
+.hidden {
+    width: 1px;
+    height: 1px;
+    font-size: 0px;
+    line-height: 0px;
+    position: absolute;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+ul#skipmenu-list li a:focus {
+    width: 100%;
+    height: 25px;
+    font-size: 14px;
+    line-height: 25px;
+    text-align: center;
+    text-decoration: none;
+    background: black;
+    color: white;
+    z-index: 99999;
+}
+/*기본설정끝*/
+
+/*상단*/
+div#header-wrap{
+    width: 100%;
+    height: 119px;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    /* background: rgba(255,255,255,0); */
+    background: -moz-linear-gradient(top,  rgba(153,153,153,0.65) 0%, rgba(211,211,211,0.01) 98%, rgba(0,0,0,0) 100%);
+    background: -webkit-linear-gradient(top,  rgba(153,153,153,0.65) 0%,rgba(211,211,211,0.01) 98%,rgba(0,0,0,0) 100%);
+    background: linear-gradient(to bottom,  rgba(153,153,153,0.65) 0%,rgba(211,211,211,0.01) 98%,rgba(0,0,0,0) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6999999', endColorstr='#00000000',GradientType=0 );
+    z-index: 300;
+    
+}
+header{
+    width: 1680px;
+    height: 100%;
+    margin: 0px auto;
+    
+}
+#title{
+    position: absolute;
+    left: 50%;
+    margin-left: -100px;
+    top: 28px;
+   
+}
+#title a{
+    font: normal 30px/35px 'Caladea';
+    color: #80140B;
+}
+
+#topmenu{
+    width: 100%;
+    padding-top: 7px;
+    box-sizing: border-box;
+}
+#topmenu-list{
+    position: absolute;
+    right: 358px;
+}
+#topmenu-list li{
+    margin-right: 25px;
+    float: left;
+}
+#topmenu-list li:last-child{
+    margin-right:0px;
+}
+#search{
+    width: 224px;
+    height: 34px;
+    margin-left: 250px;
+    position: absolute;
+}
+#search input{
+    width: 100%;
+    height: 34px;
+    left: 0px;
+    top: 0px;
+    border: solid 1px #d9d9d9;
+    border-radius: 17px;
+}
+#search i{
+    position: absolute;
+    left: 180px;
+    top: 11px;
+}
+#mainmenu{
+    width: 840px;
+    position: absolute;
+    left: 50%;
+    margin-left: -420px;
+    top: 88px;
+}
+#mainmenu-list{
+    display: flex;
+    justify-content: space-around;
+}
+
+#mainmenu-list li a:after{
+    display:block;
+    content: '';
+    border-bottom: solid 2px #80140B;  
+    transform: scaleX(0);  
+    transition: transform 200ms ease-out;
+    transform-origin:0% 50%;
+   
+}
+#mainmenu-list li a:hover:after{
+    transform:scaleX(1);
+   
+}
+#mainmenu-list li a{
+    font: normal 18px/27px 'Caladea';  
+}
+/*상단끝*/
+
+
+/*하단*/
+footer{
+    width: 100%;
+    height: 200px;
+    display: flex;
+    justify-content: space-around;
+
+}
+#footer-body{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.in-title{
+    width: 15%;
+    text-align: center;
+    font: normal 30px/35px 'Caladea'; 
+    color: #80140B;
+}
+#in-text{
+    font: normal 18px/27px 'Caladea';  
+    width: 35%;
+}
+#in-text p{
+    margin-top: 10px;
+}
+#in-text p:first-child{
+    margin-top: 0px;
+}
+#in-icon{
+    width: 15%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width:1680px){
+    header{
+        width: 100%;
+    }
+} 
+@media screen and (max-width:1200px){
+    #search{
+        margin-left: 180px;
+    }  
+}
