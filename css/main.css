@@ -470,10 +470,17 @@ div.layer{
     display: flex;
     align-items: center;
     justify-content: center;
+    transition: 0.2s ease-out;
+    overflow: hidden;
+    
 }
 
 #goods-center-box p{
     font: normal 2.375em 'Caladea';
+}
+
+#goods-center-box:hover{
+    transform: scale(1.1);
 }
 
 .goods-icon img{
@@ -643,6 +650,14 @@ div.layer{
         height: 667px;
     }
     
+
+
+
+
+    .ontext,.downtext{
+        margin-left: 0px;
+        text-align: center;
+    }
     
 
 
@@ -658,12 +673,16 @@ div.layer{
         font-size: 24px;
         bottom: -15px;
     }
-    .downtext{
-        margin-left: 250px;
-    }
     #calendar img{
         transform: scale(0.6);
     }
+    #goods-list{
+        transform: scale(0.8);
+    }
+    /* #goods-body{
+        height: auto;
+    } */
+    
     
 
 }
