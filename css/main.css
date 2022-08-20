@@ -477,19 +477,19 @@ div.layer{
 }
 
 .goods-icon img{
-    margin: 3px;
+    margin: 1px;
 } 
 .goods-text{
     width: 100%;
     position: absolute;
-    top: 30%;
+    top: 25%;
     font: normal 20px/35px 'Caladea';
 }
 
 .goods-icon{
     width: 100%;
     position: absolute;
-    top: 70%;
+    top: 60%;
    
 }
 
