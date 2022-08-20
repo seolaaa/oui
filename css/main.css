@@ -223,7 +223,7 @@ div.layer{
 #pick{
     width: 50%;
     position: relative;
-    overflow: hidden;
+    
 }
 #pick-list{
     position: absolute;
@@ -590,14 +590,27 @@ div.layer{
         width: 100%;
         
     } 
+
+    #reservation-body{
+        height: 1200px;
+    }
+    #reservation{
+        justify-content: normal;
+        margin: 0px;
+    }
+    #reservation-title{
+        margin-top: 50px;
+
+    }
     #main-image-text{
         font-size: 10px;
     }
     #store-body::after{
         display: none;
     }
+    
     #pick{
-        transform: scale(0.8);
+        left: -12%;
     }
     #pick-list{
         display: flex;
@@ -608,34 +621,42 @@ div.layer{
     }
     #pick-list li{
         margin-left:0px;
+        left: -30%;
     }
-    #calendar{
-        justify-content: center;
-        padding-left: 0px;
+    #calendar-pick-content{
+        flex-direction: column;
+        width: auto;
+        justify-content: normal;
         
     }
+    .pick-me-btn{
+        margin-top: 420px;
 
-   
+    }
+
+
+    #calendar{
+        justify-content: center;
+        width: 100%;
+        padding-left: 0px;
+    }
     #calendar img{
-        transform: scale(0.8);
+        transform: scale(0.9);
     }
     #reservation-body::after{
         height: 1070px;
     }
+
+    #left-btn{
+        left: -70px;
+    }
+    #right-btn{
+        left: 565px;
+    }
    
 
 
-    #pick-btn{
-        transform: scale(0.8);
-    }
-    }
-    /* #left-btn{
-        
-    }
-    #right-btn{
-       
-    } */
-    
+   
 
 
     #solutions-all li embed{
@@ -661,7 +682,7 @@ div.layer{
     
 
 
-
+}
 
 
 
@@ -674,14 +695,12 @@ div.layer{
         bottom: -15px;
     }
     #calendar img{
-        transform: scale(0.6);
-    }
-    #goods-list{
         transform: scale(0.8);
     }
-    /* #goods-body{
-        height: auto;
-    } */
+    #goods-list{
+        transform: scale(0.9);
+    }
+
     
     
 
