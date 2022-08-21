@@ -77,7 +77,7 @@ header{
 #search{
     width: 224px;
     height: 34px;
-    margin-left: 250px;
+    left: 250px;
     position: absolute;
 }
 #search input{
@@ -179,6 +179,9 @@ footer{
 } 
 @media screen and (max-width:1200px){
     #search{
-        margin-left: 180px;
+        left: 20px;
+    }
+    #topmenu-list{
+        right: 100px;
     }  
 }
