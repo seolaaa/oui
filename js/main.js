@@ -28,9 +28,9 @@ window.addEventListener('load',()=>{
         let scrollHeight = window.pageYOffset;
 
         if(scrollHeight>=900){
-            gsap.to(text1,{top:200,opacity:1,duration:0.5,ease:'power1.out',delay:0})
-            gsap.to(text2,{top:320,opacity:1,duration:0.5,ease:'power1.out',delay:0.2})
-            gsap.to(text3,{top:600,opacity:1,duration:0.5,ease:'power1.out',delay:0.4}),isWheel=false;
+            gsap.to(text1,{top:220,opacity:1,duration:0.5,ease:'power1.out',delay:0})
+            gsap.to(text2,{top:340,opacity:1,duration:0.5,ease:'power1.out',delay:0.2})
+            gsap.to(text3,{top:580,opacity:1,duration:0.5,ease:'power1.out',delay:0.4}),isWheel=false;
         }
         
     }

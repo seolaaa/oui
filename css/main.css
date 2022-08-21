@@ -61,6 +61,7 @@ embed#movie{
     width: 40%;
     display: flex;
     align-items: center;
+    opacity: 1;
 }
 #main-image-text{
     width: 50%;
@@ -590,8 +591,21 @@ div.layer{
         width: 100%;
         
     } 
+    #main-content{
+        justify-content: center;
+    }
+    #main-image{
+        width: 20%;
+       
+    }
+    #main-image img{
+        transform: scale(0.8);
+    }
+    
     #main-image-text{
         font-size: 14px;
+        transform: scale(0.7);
+        width: 80%;
     }
 
     #store{
@@ -677,11 +691,7 @@ div.layer{
     #solutions-all li p{
         font-size: 16px;
     }
-    #main-image img{
-        width: 506px;
-        height: 667px;
-    }
-    
+   
 
 
 
@@ -700,6 +710,17 @@ div.layer{
 @media screen and (max-width:1200px){
     #main-text-wrap{
         display:block;
+    }
+    #main-content-body{
+        height: auto;
+    }
+    #main-image{
+        opacity: 0;
+        width: 0%;
+    }
+    #main-image-text{
+        width: 100%;
+        transform: scale(0.9);
     }
     
     #store-body{
