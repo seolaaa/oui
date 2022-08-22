@@ -480,9 +480,7 @@ div.layer{
     font: normal 2.375em 'Caladea';
 }
 
-#goods-center-box:hover{
-    transform: scale(1.1);
-}
+
 
 .goods-icon img{
     margin: 1px;
