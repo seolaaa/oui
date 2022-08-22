@@ -27,10 +27,10 @@ window.addEventListener('load',()=>{
 
         let scrollHeight = window.pageYOffset;
 
-        if(scrollHeight>=900){
-            gsap.to(text1,{top:220,opacity:1,duration:0.5,ease:'power1.out',delay:0})
-            gsap.to(text2,{top:220,opacity:1,duration:0.5,ease:'power1.out',delay:0.2})
-            gsap.to(text3,{top:680,opacity:1,duration:0.5,ease:'power1.out',delay:0.4}),isWheel=false;
+        if(scrollHeight>=800){
+            // gsap.to(text1,{top:220,opacity:1,duration:0.5,ease:'power1.out',delay:0})
+            gsap.to(text2,{width:840,opacity:1,duration:0.5,ease:'power1.out',delay:0})
+            gsap.to(text3,{top:680,opacity:1,duration:0.5,ease:'power1.out',delay:0.5}),isWheel=false;
         }
         
     }
