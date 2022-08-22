@@ -7,6 +7,11 @@ window.addEventListener('load',()=>{
     const leftBtn = document.querySelector('#left-btn')
     const rightBtn = document.querySelector('#right-btn')
 
+    const type = document.querySelectorAll('.type')
+
+    
+
+
     let currentIndex = 0;
     let nextIndex = 1;
 
@@ -34,51 +39,79 @@ window.addEventListener('load',()=>{
         rightBtn.addEventListener('click',pickRight);
         leftBtn.addEventListener('click',pickLeft);
 
+        type.addEventListener('click',pickClick);
+       
+
+
     }
 
     function pickRight(){
         if(isSlide==false){
-
             isSlide = true;
             nextIndex = currentIndex+1;
           }
-  
-         
+          
           if(nextIndex>=pickLength){
             nextIndex = 0;
           }
 
+         
           gsap.to(pickLi[currentIndex],{right:pickWidth,opacity:0, duration:0.5, ease:'power1.out'})
           gsap.set(pickLi[nextIndex],{left:pickWidth})
           gsap.to(pickLi[nextIndex],{left:0,opacity:1,duration:0.5,ease:'power1.out',onComplete:()=>{
             isSlide=false;
           }})
-
           currentIndex=nextIndex;
-
     }
 
     function pickLeft(){
       if(isSlide==false){
-
         isSlide = true;
         nextIndex = currentIndex-1;
       }
 
      
       if(nextIndex<0){
-        nextIndex = 2;
+        nextIndex = 0;
       }
 
-      gsap.to(pickLi[currentIndex],{left:pickWidth,opacity:0, duration:0.5, ease:'power1.out'})
+      gsap.to(pickLi[currentIndex],{left:-pickWidth,opacity:0, duration:0.5, ease:'power1.out'})
       gsap.set(pickLi[nextIndex],{left:pickWidth})
       gsap.to(pickLi[nextIndex],{left:0,opacity:1,duration:0.5,ease:'power1.out',onComplete:()=>{
         isSlide=false;
       }})
-
       currentIndex=nextIndex;
-
     }
+
+    function pickClick(){
+
+      let clickNum = getIndex(this)
+
+
+      alert(clickNum)
+      
+      
+    }
+
+    function getIndex(checkMenu){
+
+      let selectedIndex = 0;
+
+      while((checkMenu=checkMenu.previousElementSibling)!=null){ 
+        selectedIndex++  
+      }
+      return selectedIndex;
+    }
+
+
+
+
+
+
+    
+    
+    
+    
 
 
 })
