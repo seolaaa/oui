@@ -32,6 +32,7 @@ window.addEventListener('load',()=>{
     function initEvent(){
         
         rightBtn.addEventListener('click',pickRight);
+        leftBtn.addEventListener('click',pickLeft);
 
     }
 
@@ -47,13 +48,35 @@ window.addEventListener('load',()=>{
             nextIndex = 0;
           }
 
-          gsap.to(pickLi[currentIndex],{left:pickWidth,opacity:0, duration:0.5, ease:'power1.out'})
+          gsap.to(pickLi[currentIndex],{right:pickWidth,opacity:0, duration:0.5, ease:'power1.out'})
           gsap.set(pickLi[nextIndex],{left:pickWidth})
           gsap.to(pickLi[nextIndex],{left:0,opacity:1,duration:0.5,ease:'power1.out',onComplete:()=>{
             isSlide=false;
           }})
 
           currentIndex=nextIndex;
+
+    }
+
+    function pickLeft(){
+      if(isSlide==false){
+
+        isSlide = true;
+        nextIndex = currentIndex-1;
+      }
+
+     
+      if(nextIndex<0){
+        nextIndex = 2;
+      }
+
+      gsap.to(pickLi[currentIndex],{left:pickWidth,opacity:0, duration:0.5, ease:'power1.out'})
+      gsap.set(pickLi[nextIndex],{left:pickWidth})
+      gsap.to(pickLi[nextIndex],{left:0,opacity:1,duration:0.5,ease:'power1.out',onComplete:()=>{
+        isSlide=false;
+      }})
+
+      currentIndex=nextIndex;
 
     }
 
