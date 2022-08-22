@@ -73,23 +73,30 @@ embed#movie{
     position: relative;
     left: 0px;
     top: 0px;
+    
 }
-#title-1{
-    font: bold 4.374em 'Caladea';
+.title-1{
+    opacity: 0;
+    /* margin-bottom: 20px; */
+    position: absolute;
+    top: 400px; /*200*/
+    right: 5px; 
+}
+.on-text{
     opacity: 0;
     /* margin-bottom: 20px; */
     position: absolute;
     top: 400px; /*200*/
     right: 5px;
 }
-#title-2{
+/* #title-2{
     font: bold 4.374em 'Caladea';
-    opacity: 0;
+    opacity: 1;
     position: absolute;
-    top: 520px; /*320*/
+    top: 520px; 320
     right: 5px;
-    /* margin-bottom: 100px; */
-}
+  
+} */
 #title-in-text{
     font: normal 1.625em 'Caladea';
     opacity: 0;
