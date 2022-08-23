@@ -1,21 +1,26 @@
 window.addEventListener('load',()=>{
 
-const div1 = document.querySelectorAll('.goods-image1')
-const div2 = document.querySelectorAll('.goods-image2')
-const div3 = document.querySelectorAll('.goods-image3')
-const div4 = document.querySelectorAll('.goods-image4')
-const div5 = document.querySelectorAll('.goods-image5')
-const div6 = document.querySelectorAll('.goods-image6')
-const div7 = document.querySelectorAll('.goods-image7')
-const div8 = document.querySelectorAll('.goods-image8')
+const div1 = document.querySelectorAll('.goods-image1');
+const div2 = document.querySelectorAll('.goods-image2');
+const div3 = document.querySelectorAll('.goods-image3');
+const div4 = document.querySelectorAll('.goods-image4');
+const div5 = document.querySelectorAll('.goods-image5');
+const div6 = document.querySelectorAll('.goods-image6');
+const div7 = document.querySelectorAll('.goods-image7');
+const div8 = document.querySelectorAll('.goods-image8');
 
-const onText = document.querySelector('.ontext')
-const downText = document.querySelector('.downtext')
+const onText = document.querySelector('.ontext');
+const downText = document.querySelector('.downtext');
+const line = document.querySelectorAll('.line');
 
 
 
-let index = 0;
-let isWheel = false;
+let startX = line.offsetLeft;
+let currentX = startX;
+let stepX = 2;
+
+move();
+
 
 initEvent();
 
@@ -40,6 +45,13 @@ function divScroll(){
         gsap.to(div8,{left:0,opacity:1,duration:1,ease:'power2.out',delay:1.4})
     }
 }
+
+
+function move(){
+
+    timer=requestAnimationFrame(move) 
+}
+
 
     
 })
