@@ -68,7 +68,7 @@ embed#movie{
     transform: scale(1.1);
 }
 #main-image-text{
-    width: 50%;
+    width: 100%;
     text-align: right;
     display: flex;
     flex-direction: column;
@@ -101,8 +101,8 @@ embed#movie{
     opacity: 0;
     position: absolute;
     top: 800px; /*600*/
-    /* right: 5px; */
-    left: 360px;
+    width: 864px;
+   
     
 }
 

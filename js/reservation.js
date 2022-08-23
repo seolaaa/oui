@@ -39,8 +39,7 @@ window.addEventListener('load',()=>{
         rightBtn.addEventListener('click',pickRight);
         leftBtn.addEventListener('click',pickLeft);
 
-        type.addEventListener('click',pickClick);
-       
+        
 
 
     }
@@ -83,25 +82,25 @@ window.addEventListener('load',()=>{
       currentIndex=nextIndex;
     }
 
-    function pickClick(){
+    // function pickClick(){
 
-      let clickNum = getIndex(this)
+    //   let clickNum = getIndex(this)
 
 
-      alert(clickNum)
+    //   alert(clickNum)
       
       
-    }
+    // }
 
-    function getIndex(checkMenu){
+    // function getIndex(checkMenu){
 
-      let selectedIndex = 0;
+    //   let selectedIndex = 0;
 
-      while((checkMenu=checkMenu.previousElementSibling)!=null){ 
-        selectedIndex++  
-      }
-      return selectedIndex;
-    }
+    //   while((checkMenu=checkMenu.previousElementSibling)!=null){ 
+    //     selectedIndex++  
+    //   }
+    //   return selectedIndex;
+    // }
 
 
 

@@ -28,14 +28,14 @@ window.addEventListener('load',()=>{
 
         let scrollHeight = window.pageYOffset;
 
-        if(scrollHeight>=700){
-            gsap.to(text1,{opacity:1,duration:0.5,ease:'power1.out',delay:0})
+        if(scrollHeight>=750){
+            gsap.to(text1,{opacity:1,duration:0.3,ease:'power1.out',delay:0})
         }
 
         if(scrollHeight>=900){
-            gsap.to(text2,{width:864,opacity:1,duration:1,ease:'power1.out',delay:0.5})
+            gsap.to(text2,{width:864,opacity:1,duration:1.5,ease:'power4.out',delay:0.5})
             gsap.to(text3,{top:680,opacity:1,duration:0.5,ease:'power1.out',delay:0.7})
-            gsap.to(img,{opacity:1,duration:0.5,ease:'power1.out',delay:0.2}),isWheel=false;
+            gsap.to(img,{opacity:1,duration:1,ease:'power4.out',delay:0.2}),isWheel=false;
         }
         
     }
