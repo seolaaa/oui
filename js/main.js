@@ -29,7 +29,7 @@ window.addEventListener('load',()=>{
 
         if(scrollHeight>=800){
             // gsap.to(text1,{top:220,opacity:1,duration:0.5,ease:'power1.out',delay:0})
-            gsap.to(text2,{width:840,opacity:1,duration:0.5,ease:'power1.out',delay:0})
+            gsap.to(text2,{width:864,opacity:1,duration:0.5,ease:'power1.out',delay:0})
             gsap.to(text3,{top:680,opacity:1,duration:0.5,ease:'power1.out',delay:0.5}),isWheel=false;
         }
         

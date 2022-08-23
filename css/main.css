@@ -84,7 +84,8 @@ embed#movie{
     position: absolute;
     top: 220px; 
     left: 5px;
-    width: 840px;
+    width: 864px;
+
 }
 .on-text{
     opacity: 0;
@@ -92,6 +93,7 @@ embed#movie{
     top: 220px; 
     left: 5px;
     width: 0px;
+    overflow: hidden;
     
 }
 #title-in-text{
@@ -99,7 +101,8 @@ embed#movie{
     opacity: 0;
     position: absolute;
     top: 800px; /*600*/
-    right: 5px;
+    /* right: 5px; */
+    left: 360px;
     
 }
 
@@ -610,6 +613,10 @@ div.layer{
         width: 80%;
     }
 
+    /* .title-1,.on-text{
+        transform: scale(0.9);
+    } */
+
     #store{
         display: flex;
         flex-direction: column;
@@ -722,7 +729,7 @@ div.layer{
     }
     #main-image-text{
         width: 100%;
-        transform: scale(0.9);
+        transform: scale(0.7);
     }
     
     #store-body{
