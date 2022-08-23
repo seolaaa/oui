@@ -141,7 +141,7 @@ embed#movie{
     background-color: #F5C13B;
     display: block;
     position: absolute;
-    bottom: 200px;
+    bottom: 230px;
     z-index: -1;
 }
 #store-list li{
@@ -626,7 +626,9 @@ div.layer{
         flex-direction: column;
         justify-content: center;
     }
-    
+    .content-title{
+        padding-top: 0px;
+    }
 
    
     #reservation{
@@ -641,7 +643,8 @@ div.layer{
     
     #store-body::after{
 
-        
+        height: 380px;
+        bottom: 250px; 
     }
     
     #pick{
@@ -746,6 +749,12 @@ div.layer{
     #store-list li p{
         font-size: 24px;
         bottom: -15px;
+    }
+
+    #store-body::after{
+
+        height: 200px;
+        bottom: 250px; 
     }
     
     #goods-list{
