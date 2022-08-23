@@ -9,20 +9,31 @@ const div6 = document.querySelectorAll('.goods-image6');
 const div7 = document.querySelectorAll('.goods-image7');
 const div8 = document.querySelectorAll('.goods-image8');
 
-const onText = document.querySelector('.ontext');
-const downText = document.querySelector('.downtext');
+const onText = document.querySelectorAll('.ontext');
+const downText = document.querySelectorAll('.downtext');
 const line = document.querySelectorAll('.line');
+
+
+
+
 
 
 
 let startX = line.offsetLeft;
 let currentX = startX;
 let stepX = 2;
+let timer;
+
+
+
 
 move();
-
-
 initEvent();
+
+
+
+
+
 
 function initEvent(){
     
@@ -33,7 +44,7 @@ function divScroll(){
 
     let scrollHeight = window.pageYOffset;
 
-    if(scrollHeight>=1800){
+    if(scrollHeight>=3400){
 
         gsap.to(div1,{top:0,left:0,opacity:1,duration:1,ease:'power2.out',delay:0})
         gsap.to(div2,{top:0,left:213,opacity:1,duration:1,ease:'power2.out',delay:0.2})
@@ -48,9 +59,17 @@ function divScroll(){
 
 
 function move(){
-
-    timer=requestAnimationFrame(move) 
+    setInterval(Moving,10)
 }
+
+function Moving(){
+
+    currentX+=stepX
+
+    onText.style.left=currentX+"px"
+
+}
+
 
 
     

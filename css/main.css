@@ -398,6 +398,7 @@ div.layer{
 .goods-big-text{
     font: normal 3.125em 'Caladea';
     color: #F5C13B;
+    width: 2500px;
 }
 .white{
     color: white;
@@ -405,6 +406,8 @@ div.layer{
 .ontext{
     padding-top: 30px;
     box-sizing: border-box;
+    position: absolute;
+    
 }
 .downtext{
     padding-bottom: 10px;
@@ -412,8 +415,8 @@ div.layer{
 }
 .line{
     width: 100%;
-    height: 1px;
-    background: black;
+    height: 3px;
+    background: rgb(226, 0, 247);
 }
 #goods-list{
     width: 751px;
