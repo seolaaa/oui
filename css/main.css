@@ -392,22 +392,23 @@ div.layer{
 }
 #goods{
     width: 1680px;
-    height: 100%;
+   
     margin: 0px auto;
 }
 .goods-big-text{
     font: normal 3.125em 'Caladea';
     color: #F5C13B;
 }
+.white{
+    color: white;
+}
 .ontext{
     padding-top: 30px;
     box-sizing: border-box;
-    margin-left: 327px;
 }
 .downtext{
     padding-bottom: 10px;
     box-sizing: border-box;
-    margin-left: 745px;
 }
 #goods-list{
     width: 751px;
@@ -426,44 +427,56 @@ div.layer{
 }
 .goods-image1{
     overflow: hidden;
+    top: -200px;
+    left: -200px;
+    opacity: 0;
 }
 .goods-image2{
     left: 213px;
+    top: -200px;
     overflow: hidden;
+    opacity: 0;
 }
 .goods-image3{
-    right: 0px;
+    right: 200px;
+    top: -200px;
     overflow: hidden;
+    opacity: 0;
 
 }
 .goods-image4{
-    right: 0px;
+    right: -200px;
     top: 317px;
     overflow: hidden;
+    opacity: 0;
 
 }
 .goods-image5{
-    right: 0px;
-    bottom: 0px;
+    right: -200px;
+    bottom: -200px;
     overflow: hidden;
+    opacity: 0;
 
 }
 .goods-image6{
     left: 216px;
-    bottom: 0px;
+    bottom: -200px;
     overflow: hidden;
+    opacity: 0;
 
 }
 .goods-image7{
-    left: 0px;
-    bottom: 0px;
+    left: -200px;
+    bottom: -200px;
     overflow: hidden;
+    opacity: 0;
 
 }
 .goods-image8{
-    left: 0px;
+    left: -200px;
     top: 244px;
     overflow: hidden;
+    opacity: 0;
 }
 
 .on-bg{
