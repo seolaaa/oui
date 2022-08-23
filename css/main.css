@@ -149,8 +149,10 @@ embed#movie{
     justify-content: center;
     position: relative;
     left: 0px;
-    top: 0px;
+    top: 500px;
     transform: scale(0.9);
+    opacity: 0;
+
     
 
 }
@@ -751,11 +753,11 @@ div.layer{
         bottom: -15px;
     }
 
-    #store-body::after{
+    /* #store-body .go::after{
 
         height: 200px;
         bottom: 250px; 
-    }
+    } */
     
     #goods-list{
         transform: scale(0.9);

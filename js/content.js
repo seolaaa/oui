@@ -1,10 +1,14 @@
 
 
 
-document.addEventListener('DOMContentLoaded',()=>{
+window.addEventListener('load',()=>{
 
     const storeList = document.querySelectorAll('#store-list>li');
     const storeWrap = document.querySelector('#store-list');
+    const after = document.querySelector('.go')
+
+   
+    
 
     
 
@@ -22,8 +26,23 @@ document.addEventListener('DOMContentLoaded',()=>{
         
         storeWrap.addEventListener('mouseleave',leaveStore)
 
+    window.addEventListener('scroll',scrollStore)    
 
-        
+
+    
+    function scrollStore(){
+
+        let scrollHeight = window.pageYOffset;
+
+        if(scrollHeight>=1800){
+
+       for(let i=0; i<storeList.length; i++){
+
+        gsap.to(storeList[i],{top:0,opacity:1,duration:0.3,ease:'power1.out',delay:i*0.3})
+
+       }
+     }
+    }
 
     function enterStore(){
         hideSore(this)
