@@ -405,10 +405,12 @@ div.layer{
 .ontext{
     padding-top: 30px;
     box-sizing: border-box;
+    width: 2500px;
 }
 .downtext{
     padding-bottom: 10px;
     box-sizing: border-box;
+    width: 2500px;
 }
 .line{
     width: 100%;
