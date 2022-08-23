@@ -2,7 +2,7 @@ window.addEventListener('load',()=>{
 
 const divWrap = document.querySelectorAll('#goods-list>div')
 
-// alert(divWrap.length)
+
 
 let index = 0;
 let isWheel = false;
@@ -11,7 +11,7 @@ initEvent();
 
 function initEvent(){
     for(item of divWrap){
-        item.addEventListener('scroll',divScroll)
+        item.addEventListener('click',divScroll)
     }
 }
 

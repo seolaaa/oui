@@ -62,11 +62,13 @@ embed#movie{
     display: flex;
     align-items: center;
     opacity: 0.5;
+    margin-top: 100px;
+    
+}
+#main-image img{
     transition: 0.2s ease-out;
 }
-#main-image:hover{
-    transform: scale(1.1);
-}
+
 #main-image-text{
     width: 100%;
     text-align: right;
@@ -148,6 +150,7 @@ embed#movie{
     position: relative;
     left: 0px;
     top: 0px;
+    transform: scale(0.9);
     
 
 }
@@ -591,6 +594,7 @@ div.layer{
 
 
 
+
 @media screen and (max-width:1680px){
     #main-content,#store,#reservation,#goods,#solutions,header{
         width: 100%;
@@ -600,7 +604,7 @@ div.layer{
         justify-content: center;
     }
     #main-image{
-        width: 20%;
+        width: 30%;
        
     }
     #main-image img{
@@ -609,8 +613,8 @@ div.layer{
     
     #main-image-text{
         font-size: 14px;
-        transform: scale(0.7);
-        width: 80%;
+        transform: scale(0.9);
+        width: 70%;
     }
 
     /* .title-1,.on-text{
@@ -622,9 +626,7 @@ div.layer{
         flex-direction: column;
         justify-content: center;
     }
-    #store h1{
-        padding-top: 0px;
-    }
+    
 
    
     #reservation{
@@ -638,7 +640,8 @@ div.layer{
     }
     
     #store-body::after{
-        display: none;
+
+        
     }
     
     #pick{
@@ -720,6 +723,11 @@ div.layer{
     #main-text-wrap{
         display:block;
     }
+  
+    #main-image{
+    visibility:hidden;
+    
+}
     #main-content-body{
         height: auto;
     }

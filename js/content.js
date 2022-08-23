@@ -11,14 +11,17 @@ document.addEventListener('DOMContentLoaded',()=>{
     let selectedStore = null;
 
 
-    
+    initEvent();
+
+    function initEvent(){
 
 
     for(const item of storeList){
             item.addEventListener('mouseenter',enterStore)
-
         }
-            storeWrap.addEventListener('mouseleave',leaveStore)
+        
+        storeWrap.addEventListener('mouseleave',leaveStore)
+
 
         
 
@@ -37,7 +40,7 @@ document.addEventListener('DOMContentLoaded',()=>{
             selectedStore.children[2].classList.remove('selected')
 
             
-            gsap.set(storeWrap,{scale:1,duration:0.5,ease:'power1.out'})
+            gsap.to(storeWrap,{scale:1,duration:0.5,ease:'power1.out'})
             gsap.to(selectedStore,{scale:0.9,duration:0.5,ease:'power1.out'})
          }
     }
@@ -52,14 +55,14 @@ document.addEventListener('DOMContentLoaded',()=>{
 
             
         
-            gsap.to(storeWrap,{scale:1,duration:0.5,ease:'power1.out'})
+            gsap.to(storeWrap,{scale:0.9,duration:0.5,ease:'power1.out'})
             gsap.to(selectedStore,{scale:1.1,duration:0.5,ease:'power1.out'})
              
         } 
     }
 
     
-
+    }
 
     
 
