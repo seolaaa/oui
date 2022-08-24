@@ -424,11 +424,16 @@ div.layer{
     color: white;
 }
 .ontext{    
-    width: 2500px;
+    width: 5000px;
+    float: left;
+}
+.ontext-in{    
+    display: none;
 }
 .downtext{
     bottom: 20px;
-    width: 2500px;
+    width: 5000px;
+    float: left;
     
 }
 .up{

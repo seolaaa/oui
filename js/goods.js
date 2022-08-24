@@ -20,6 +20,10 @@ let startX = wrap.offsetLeft;
 let topCurrentX = startX;
 let downCurrentX = startX;
 let stepX = 2;
+let endX = startX+window.innerWidth-onText.offsetWidth;
+
+alert(endX)
+
 
 
 moving();
@@ -66,8 +70,12 @@ function textMoving(){
     topCurrentX+=stepX
     downCurrentX+=(-stepX)
 
+   
+
    onText.style.left=topCurrentX+"px"
    downText.style.left=downCurrentX+"px"
+
+  
 
  
 }
