@@ -597,7 +597,8 @@ div.layer{
 #solutions-all{
     display: flex;
     justify-content: space-around;
-    margin-top: 73px;
+    margin-top: 300px;
+    opacity: 0;  /*73*/
 }
 #solutions-all li{
     transition: 0.3s ease-out;
