@@ -406,41 +406,41 @@ div.layer{
     width: 100%;
     height: 1000px;
     background-color:#610000;
+    position: relative;
+    left: 0px;
+    top: 0px;
 }
 #goods{
     width: 1680px;
-   
     margin: 0px auto;
 }
 .goods-big-text{
     font: normal 3.125em 'Caladea';
     color: #F5C13B;
+    position: absolute;
+    left: 0px;
 }
 .white{
     color: white;
 }
-.ontext{
-    padding-top: 30px;
-    box-sizing: border-box;
+.ontext{    
     width: 2500px;
 }
 .downtext{
-    padding-bottom: 10px;
-    box-sizing: border-box;
+    bottom: 20px;
     width: 2500px;
+    
 }
-.line{
-    width: 100%;
-    height: 1px;
-    background: black;
+.up{
+    top: 20px;
 }
 #goods-list{
     width: 751px;
     height: 775px;
-    margin: 25px auto;
+    margin: 0px auto;
     position: relative;
-    left: 0px;
-    top: 0px;
+    left: 20px;
+    top: 110px;
     
     
 }

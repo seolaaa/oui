@@ -11,29 +11,34 @@ const div8 = document.querySelectorAll('.goods-image8');
 
 const onText = document.querySelector('.ontext');
 const downText = document.querySelector('.downtext');
-const line = document.querySelectorAll('.line');
+const wrap = document.querySelector('#goods-body');
 
 
 
-let startX = line.offsetLeft;
-let currentX = startX;
+let startX = wrap.offsetLeft;
+let topCurrentX = startX;
+let downCurrentX = startX;
 let stepX = 2;
 
-move();
 
-
+moving();
 initEvent();
+
+
+
 
 function initEvent(){
     
     window.addEventListener('scroll',divScroll)
+   
 }
+
 
 function divScroll(){
 
     let scrollHeight = window.pageYOffset;
 
-    if(scrollHeight>=3900){
+    if(scrollHeight>=4000){
 
         gsap.to(div1,{top:0,left:0,opacity:1,duration:1,ease:'power2.out',delay:0})
         gsap.to(div2,{top:0,left:213,opacity:1,duration:1,ease:'power2.out',delay:0.2})
@@ -47,10 +52,33 @@ function divScroll(){
 }
 
 
-function move(){
 
-    timer=requestAnimationFrame(move) 
+function moving(){
+
+  
+
+    setInterval(textMoving,10)
 }
+
+function textMoving(){
+
+    //alert('test')
+
+    topCurrentX+=stepX
+    downCurrentX+=(-stepX)
+
+   
+
+   onText.style.left=topCurrentX+"px"
+   downText.style.left=downCurrentX+"px"
+
+
+  
+
+    
+}
+
+
 
 
     
