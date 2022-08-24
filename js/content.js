@@ -38,7 +38,7 @@ window.addEventListener('load',()=>{
 
        for(let i=0; i<storeList.length; i++){
 
-        gsap.to(storeList[i],{top:0,opacity:1,duration:0.3,ease:'power1.out',delay:i*0.3})
+        gsap.to(storeList[i],{top:0,opacity:1,duration:0.5,ease:'power2.out',delay:i*0.3})
 
        }
      }
