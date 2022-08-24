@@ -63,14 +63,20 @@ embed#movie{
     align-items: center;
     opacity: 0.5;
     margin-top: 100px;
+    position: relative;
     
 }
 #line-wrap{
-    width: 40%;
-    display: flex;
-    align-items: center;
-    opacity: 0.5;
-    margin-top: 100px;
+    width: 80%;
+    height: 30%;
+    background: red;
+    position: absolute;
+    bottom: 0px;
+}
+.yellow-line{
+    width: 300px;
+    height: 1px;
+    background: yellow;
 }
 #main-image img{
     transition: 0.2s ease-out;
