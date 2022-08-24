@@ -2,7 +2,7 @@ window.addEventListener('load',()=>{
 
 const solutionList = document.querySelector('#solutions-all')
 
-alert(solutionList)
+
 
 initEvent();
 

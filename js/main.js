@@ -31,8 +31,9 @@ window.addEventListener('load',()=>{
 
         let scrollHeight = window.pageYOffset;
 
-        if(scrollHeight>=750){
+        if(scrollHeight>=730){
             gsap.to(text1,{opacity:1,duration:0.3,ease:'power1.out',delay:0})
+            gsap.to(img,{opacity:0.5,duration:1,ease:'power4.out',delay:0.2})
         }
 
         if(scrollHeight>=900){
