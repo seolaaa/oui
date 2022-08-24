@@ -10,9 +10,10 @@ const div7 = document.querySelectorAll('.goods-image7');
 const div8 = document.querySelectorAll('.goods-image8');
 
 const onText = document.querySelector('.ontext');
+const onTextIn = document.querySelector('.ontext-in');
+const downTextIn = document.querySelector('.downtext-in');
 const downText = document.querySelector('.downtext');
 const wrap = document.querySelector('#goods-body');
-
 
 
 let startX = wrap.offsetLeft;
@@ -55,27 +56,20 @@ function divScroll(){
 
 function moving(){
 
-  
-
     setInterval(textMoving,10)
 }
 
-function textMoving(){
 
-    //alert('test')
+
+function textMoving(){
 
     topCurrentX+=stepX
     downCurrentX+=(-stepX)
 
-   
-
    onText.style.left=topCurrentX+"px"
    downText.style.left=downCurrentX+"px"
 
-
-  
-
-    
+ 
 }
 
 
