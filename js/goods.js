@@ -22,7 +22,7 @@ let downCurrentX = startX;
 let stepX = 2;
 let endX = startX+window.innerWidth-onText.offsetWidth;
 
-alert(endX)
+
 
 
 
@@ -70,6 +70,12 @@ function textMoving(){
     topCurrentX+=stepX
     downCurrentX+=(-stepX)
 
+    if(topCurrentX >= endX || topCurrentX <=0){
+        stepX=-1
+    }
+    if(downCurrentX >= endX || downCurrentX <=0){
+        stepX=-1
+    }
    
 
    onText.style.left=topCurrentX+"px"
