@@ -15,12 +15,10 @@ const wrap = document.querySelector('#goods-body');
 
 
 let startX = -wrap.offsetLeft;
-let startX2 = wrap.offsetLeft;
 let topCurrentX = startX;
 let downCurrentX = startX;
 let stepX = 2;
-let endX = startX+window.innerWidth-downText.offsetWidth;
-let endX2 = startX+window.innerWidth-onText.offsetWidth;
+let endX = window.innerWidth
 
 //onText.offsetWidth;
 
@@ -75,7 +73,7 @@ function textMoving(){
     downCurrentX+=(-stepX)
 
     if(topCurrentX >= endX || topCurrentX <=0){
-        stepX=+1
+        stepX=-1
     }
     // if(downCurrentX >= endX || downCurrentX <=0){
     //     stepX=+1

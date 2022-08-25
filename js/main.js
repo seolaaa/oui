@@ -9,6 +9,8 @@ window.addEventListener('load',()=>{
     const img = document.querySelector('#main-image')
     const border = document.querySelector('.line-wrap')
 
+    const cursor = document.querySelector('.cursor');
+
 
 
     const windowHeight = window.innerHeight;
@@ -17,9 +19,12 @@ window.addEventListener('load',()=>{
     let isWheel = false;
 
    
+
+
     initEvent();
 
-   
+
+ 
 
     function initEvent(){
         window.addEventListener('scroll',scrollWindow)
@@ -33,7 +38,7 @@ window.addEventListener('load',()=>{
 
         if(scrollHeight>=730){
             gsap.to(text1,{opacity:1,duration:0.3,ease:'power1.out',delay:0})
-            gsap.to(img,{opacity:0.5,duration:1,ease:'power4.out',delay:0.2})
+            
         }
 
         if(scrollHeight>=900){
