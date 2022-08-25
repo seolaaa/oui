@@ -419,19 +419,20 @@ div.layer{
     color: #F5C13B;
     position: absolute;
     left: 50%;
-    margin-left: -2500px;
+    margin-left: -1875px;
+    width: 100%;
 }
 .white{
     color: white;
 }
 .ontext{    
-    width: 4000px;
+    width: 3750px;
    
 }
 .downtext{
     bottom: 20px;
-    width: 4800px;
-   
+    width: 3750px;
+
     
 }
 .up{
@@ -688,8 +689,8 @@ div.layer{
     
     #store-body::after{
 
-        height: 380px;
-        bottom: 250px; 
+        height: 250px;
+        bottom: 230px; 
     }
     
     #pick{

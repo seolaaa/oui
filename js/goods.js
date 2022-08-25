@@ -72,8 +72,8 @@ function textMoving(){
     topCurrentX+=stepX
     downCurrentX+=(-stepX)
 
-    if(topCurrentX >= endX || topCurrentX <= 0){
-        stepX*=-1
+    if(topCurrentX >= endX ){
+        topCurrentX=startX
     }
     // if(downCurrentX >= endX || downCurrentX <=0){
     //     stepX=+1
