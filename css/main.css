@@ -418,20 +418,23 @@ div.layer{
     font: normal 3.125em 'Caladea';
     color: #F5C13B;
     position: absolute;
-    left: 50%;
-    margin-left: -1875px;
-    width: 100%;
+    
+    
 }
 .white{
     color: white;
 }
 .ontext{    
     width: 3750px;
+    left: 50%;
+    margin-left: -1875px;
    
 }
 .downtext{
     bottom: 20px;
     width: 3750px;
+    right: 50%;
+    margin-right: -1875px;
 
     
 }

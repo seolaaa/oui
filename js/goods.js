@@ -14,13 +14,22 @@ const downText = document.querySelector('.downtext');
 const wrap = document.querySelector('#goods-body');
 
 
+
+let offsetRight = window.innerWidth - wrap.offsetLeft - wrap.offsetWidth;
+
+
 let startX = wrap.offsetLeft;
+let startX2 = offsetRight;
 let topCurrentX = startX;
-let downCurrentX = startX;
+let downCurrentX = startX2;
 let stepX = 2;
 let endX = window.innerWidth
 
-//onText.offsetWidth;
+
+
+
+
+
 
 
 
@@ -72,12 +81,12 @@ function textMoving(){
     topCurrentX+=stepX
     downCurrentX+=(-stepX)
 
-    if(topCurrentX >= endX ){
-        topCurrentX=startX
+    if(topCurrentX >= endX){
+        topCurrentX=+startX
     }
-    // if(downCurrentX >= endX || downCurrentX <=0){
-    //     stepX=+1
-    // }
+    if(downCurrentX >= endX){
+        downCurrentX=-startX2
+    }
    
 
    onText.style.left=topCurrentX+"px"
