@@ -1,8 +1,8 @@
 window.addEventListener('load',()=>{
 
-const solutionList = document.querySelector('#solutions-all')
+const solutionList = document.querySelectorAll('#solutions-all>li')
 
-
+let isWheel = false;
 
 initEvent();
 
@@ -17,11 +17,10 @@ function scrollSolution(){
     let scrollHeight = window.pageYOffset;
 
     if(scrollHeight>=4900){
-        
 
-        gsap.to(solutionList,{margin:'73 0 0 0',opacity:1,ease:'power1.out',duration:0.8})
-
-        
+        for(let i=0; i<solutionList.length; i++){
+            gsap.to(solutionList[i],{opacity:1,scale:1,duration:0.1,delay:i*0.3,ease:'power4.out',}),isWheel = false;
+        }
     }
-}
+    }
 })
