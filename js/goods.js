@@ -14,7 +14,7 @@ const downText = document.querySelector('.downtext');
 const wrap = document.querySelector('#goods-body');
 
 
-let startX = -wrap.offsetLeft;
+let startX = wrap.offsetLeft;
 let topCurrentX = startX;
 let downCurrentX = startX;
 let stepX = 2;
@@ -62,7 +62,7 @@ function divScroll(){
 
 function moving(){
 
-    setInterval(textMoving,5)
+    setInterval(textMoving,10)
 }
 
 
@@ -72,8 +72,8 @@ function textMoving(){
     topCurrentX+=stepX
     downCurrentX+=(-stepX)
 
-    if(topCurrentX >= endX || topCurrentX <=0){
-        stepX=-1
+    if(topCurrentX >= endX || topCurrentX <= 0){
+        stepX*=-1
     }
     // if(downCurrentX >= endX || downCurrentX <=0){
     //     stepX=+1
