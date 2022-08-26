@@ -661,10 +661,12 @@ div.layer{
     transition: 0.3s ease-out;
     opacity: 0;  /*73*/
     transform: scale(0.5);
+    overflow: hidden;
 }
 
 #solutions-all li embed{
-    transition:0.3s ease-out;
+    transition:0.5s ease-out;
+    
 }
 #solutions-all li embed:hover{
     transform: scale(1.1);
