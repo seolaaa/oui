@@ -61,7 +61,7 @@ function divScroll(){
 
 function moving(){
 
-    setInterval(textMoving,10)
+    setInterval(textMoving,18)
 }
 
 

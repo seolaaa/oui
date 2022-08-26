@@ -408,18 +408,52 @@ div.layer{
     margin-top: 55px;
 }
 
+
+/*수정*/
+
 .all-content-btn{
-    width: 380px;
+    width: 380px; /*380*/
     height: 66px;
     background: white;
+    color: black;
     border: solid 3px #1b1b1b;
     display: flex;
     align-items: center;
     justify-content: center;
     font: normal 1.5em 'Caladea';
     box-shadow: 2px 2px rgba(128, 128, 128, 0.5);
+    position: relative;
 
 }
+.all-content-btn:after{
+
+    content: "";
+    display: block;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 0px;
+    height: 66px;
+
+    background: rgb(0, 0, 0);
+    
+    
+
+
+    transition: all 0.3s ease;
+
+}
+.all-content-btn:hover:after{
+    width: 380px;
+}
+.all-content-btn:hover{
+    
+}
+
+/*수정*/
+
+
+
 
 /*pick 컨텐츠 끝*/
 
