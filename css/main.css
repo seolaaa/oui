@@ -667,6 +667,8 @@ div.layer{
     transform: scale(1.2);
 }
 
+
+
     
 #solutions-all li p{
     font: normal 1.5em 'Caladea';
@@ -864,6 +866,9 @@ div.layer{
         transform: scale(0.9);
     }
 
+    #solutions-all li embed{
+        width: 100%;
+    }
     
     
 
