@@ -1,3 +1,4 @@
+
 body,html{
     width: 100%;
     height: 100%;
@@ -218,7 +219,7 @@ div.layer{
     position:relative;
     left: 0px;
     top: 0px;
-    background: #FCF5F0;;
+    /* background: #FCF5F0;; */
 }
 #reservation-title{
     font: normal 2.375em 'Caladea';
@@ -243,6 +244,28 @@ div.layer{
     align-items: center;
     justify-content: center;
 }
+
+.bg {
+    animation:slide 3s ease-in-out infinite alternate;
+    background-image: linear-gradient(-60deg, #FFEFBA 50%, #FFFFFF 50%);
+    bottom:0;
+    left:-50%;
+    opacity:.5;
+    position:absolute;
+    right:-50%;
+    top:0;
+    z-index:-1;
+  }
+  
+  .bg2 {
+    animation-direction:alternate-reverse;
+    animation-duration:4s;
+  }
+  
+  .bg3 {
+    animation-duration:5s;
+  }
+
 #calendar{
     width: 50%;
     display: flex;
@@ -564,7 +587,7 @@ div.layer{
     overflow: hidden; 
 
 }
-.bg{
+.bg1{
     display: block;
 }
 
@@ -835,3 +858,15 @@ div.layer{
       -webkit-clip-path: polygon(0% 100%, 3px 100%, 3px 100%, 3px 100%, 3px 100%, 3px 100%, 3px 100%, 3px 100%, 3px 100%, 0% 100%);
     }
   }
+
+  @keyframes slide {
+    0% {
+      transform:translateX(-25%);
+    }
+    100% {
+      transform:translateX(25%);
+    }
+  }
+
+
+
