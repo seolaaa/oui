@@ -663,8 +663,11 @@ div.layer{
     transform: scale(0.5);
 }
 
-#solutions-all li:hover{
-    transform: scale(1.2);
+#solutions-all li embed{
+    transition:0.3s ease-out;
+}
+#solutions-all li embed:hover{
+    transform: scale(1.1);
 }
 
 
@@ -801,7 +804,7 @@ div.layer{
    
 
 
-   
+
 
 
     #solutions-all li embed{
@@ -812,8 +815,6 @@ div.layer{
         font-size: 16px;
     }
    
-
-
 
 
     .ontext,.downtext{
