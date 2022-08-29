@@ -48,9 +48,8 @@ header{
 }
 #title{
     position: absolute;
-    left: 50%;
-    margin-left: -100px;
     top: 28px;
+    margin-left: 10px;
    
 }
 #title a{
@@ -60,7 +59,7 @@ header{
 
 #topmenu{
     width: 100%;
-    padding-top: 7px;
+    padding-top: 38px;
     box-sizing: border-box;
 }
 #topmenu-list{
@@ -98,11 +97,11 @@ header{
 
 
 #mainmenu{
-    width: 840px;
+    width: 40%;
     position: absolute;
-    left: 50%;
-    margin-left: -420px;
-    top: 88px;
+    left: 25%;
+    top: 38px;
+    margin-left: 10px;
 }
 #mainmenu-list{
     display: flex;
