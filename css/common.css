@@ -74,7 +74,9 @@ header{
 #topmenu-list li:last-child{
     margin-right:0px;
 }
-#search{
+
+
+/* #search{
     width: 224px;
     height: 34px;
     left: 250px;
@@ -92,7 +94,9 @@ header{
     position: absolute;
     left: 180px;
     top: 11px;
-}
+} */
+
+
 #mainmenu{
     width: 840px;
     position: absolute;
