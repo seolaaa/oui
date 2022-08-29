@@ -97,11 +97,11 @@
   #ready-title::after{
     content: "";
     display: block;
-    width: 554px;
+    width: 550px;
     height: 1px;
     background: black;
     position: absolute;
-    left: 600px;
+    left: 670px;
   }
 
 
@@ -117,6 +117,12 @@
 
 
 
+
+  @media screen and (max-width:1680px){
+    #ready-title::after{
+      display: none;
+    }
+  }
 
   @keyframes lds-spinner {
     0% {
