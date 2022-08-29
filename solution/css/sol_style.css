@@ -205,3 +205,24 @@
     justify-content: flex-end;
     margin-right: 180px;
 }
+
+
+
+@media screen and (max-width:1680px){
+    #video-content,#sign-up-wrap{
+        width: 100%;
+    }
+    .content-title::before,.content-title::after{
+        display: none;
+    }
+}
+@media screen and (max-width:1200px){
+    #soultion-main-text{
+
+        top: 250px;
+
+    }
+    #sign-up-wrap{
+        transform: scale(0.7);
+    }
+}
