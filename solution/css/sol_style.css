@@ -162,51 +162,45 @@
     
 }
 #sign-up-wrap{
-    width: 100%;
+    width: 80%;
     height: 455px;
-    margin: 0px auto;
-    margin-top: 112px;
+    margin: 112px auto;
     display: flex;
     align-items: center;
+    justify-content: space-evenly;
     font: normal 1.25em 'Caladea'; 
 }
 #sign-up-left{
-    width: 50%;
+    width: 600px;
     height: 100%;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-end;
     justify-content: center;
 }
 #sign-up-left input{
     width: 427px;
     height: 57px;
     border: solid 1px #959595;
-    margin-left: 50px;
+    margin-left: 30px;
 }
 #sign-up-left p{
     margin-top: 13px;
 }
-#sign-up-left .num{
-    margin-left: 2px;
-
-}
-#sign-up-left .email{
-    margin-left: 23px;
-}
 
 #sign-up-right{
-    width: 50%;
+    width: 600px;
     height: 100%;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-end;
     justify-content: center;
 }
 #sign-up-right input{
     width: 427px;
     height: 250px;
     margin-left: 30px;
+    border: solid 1px #959595;
 }
 #sign-up-btn{
     display: flex;
@@ -231,7 +225,7 @@
 
     }
     #sign-up-wrap{
-        transform: scale(0.7);
+        transform: scale(0.8);
     }
 }
 
@@ -249,6 +243,13 @@
     #application{
         width: 100%;
         margin-left: 0px;
+    }
+    #sign-up-wrap{
+        flex-direction: column;
+
+    }
+    #sign-up-right{
+        margin-top: 30px;
     }
     
 }
