@@ -250,6 +250,13 @@
     }
     #sign-up-right{
         margin-top: 30px;
+        margin-right: 150px;
     }
-    
+    #sign-up-left{
+        margin-right: 150px;
+    }
+    #sign-up-btn{
+        justify-content: center;
+        margin-right: 0px;
+    }
 }
