@@ -44,7 +44,7 @@ function divScroll(){
 
     let scrollHeight = window.pageYOffset;
 
-    if(scrollHeight>=4000){
+    if(scrollHeight>=3500){
 
         gsap.to(div1,{top:0,left:0,opacity:1,duration:1,ease:'power2.out',delay:0})
         gsap.to(div2,{top:0,left:213,opacity:1,duration:1,ease:'power2.out',delay:0.2})
